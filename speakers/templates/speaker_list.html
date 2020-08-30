@@ -104,6 +104,17 @@
                         <i class="icon-speech"></i>
                       </a>
                     </li>
+
+                    {% if speaker.youtube_vide_url %}
+
+                    <li class="col g-brd-right g-brd-gray-light-v4">
+                      <a class="u-icon-v1 pulse g-color-youtube g-color-youtube--hover g-mr-15 g-mb-20"  data-toggle="tooltip" data-placement="bottom"  title="Watch {{ speaker.talk_title }} on Youtube" href="{{ speaker.youtube_vide_url }}" target="/">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </li>
+                    {% else %}
+
+            {% endif %}
                   </ul>
                   <!-- End Figure List -->
                 </figure>
