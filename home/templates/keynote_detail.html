@@ -129,6 +129,42 @@
             <!-- End Speaker Contacts Panel -->
 
 
+            
+                <!-- Speaker Contacts Panel -->
+                <div class="card border-0 rounded-0 g-mb-50">
+  
+  
+                {% if keynote.youtube_vide_url %}
+                <h2 id="video" class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-20 g-mb-30">
+                  <span class="g-color-primary">Video</span></h2>
+  
+                <div class="text-center g-flex-centered-item g-position-rel">
+  
+                <div  class="text-center col-lg-7 order-lg-1 g-pt-10 g-mb-60" >
+                  
+                  <!-- Youtube Iframe -->
+                  <div class="embed-responsive  u-shadow-v36 g-brd-around g-brd-7 g-brd-white g-rounded-5 mb-4 embed-responsive-16by9 g-mb-30">
+                    <iframe src="{{ keynote.youtube_iframe_url }}" frameborder="0" allowfullscreen=""></iframe>
+                  </div>
+                  <!-- End Youtube Iframe -->
+                  
+                  <!-- Example Button -->
+                  <a href="{{ keynote.youtube_vide_url }}" class="btn text-center  btn-xl u-btn-red u-btn-hover-v2-2 g-letter-spacing-0_5 text-uppercase g-rounded-50 g-px-15 g-mr-10 g-mb-15" target="/">
+                    
+                    <i class="fa fa-youtube g-font-size-30 "></i>
+                  </a>
+                  
+                  <!-- End Example Button -->
+                </div>
+                </div>
+                {% else %}
+                  <p></p>
+              {% endif %}
+               
+                </div>
+                <!-- End Speaker Contacts Panel -->
+    
+
             <div class="text-center"><br><br> 
               <a  onclick="goBack()" class="btn btn-md u-btn-inset u-btn-inset--rounded u-btn-outline-primary g-font-weight-600 g-letter-spacing-0_5 text-uppercase g-brd-2 g-rounded-50 g-mr-10 g-mb-15"> 
                 <i class="fa fa-arrow-left g-ml-3"></i>
